@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <!-- gf -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Login Student</title>
+</head>
+<body class="min-h-screen w-full text-gray-900 font-sans antialiased">
+   <!-- navbar -->
+<nav class="w-full h-12 bg-white shadow-md flex items-center justify-between px-4">
+    <div class="flex items-center ml-4 gap-3">
+      <img src="assets/logo kiri.png" alt="logo kiri" class="h-10 w-24">
+      <h2 class="text-md font-bold text-slate-900">SMP 28 JATINANGOR</h2>
+    </div>
+  
+    <!-- kanan -->
+    <div class="flex items-center text-gray-700 gap-2">
+        <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+            <a href="dashboard.html" class=" hover:text-white">Dashboard</a>
+        </div>
+        <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+            <a href="#" class=" hover:text-white">Contact</a>
+        </div>
+      <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+          <a href="login.html" class=" hover:text-white">Sign in</a>
+      </div>
+      <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+          <a href="register.html" class=" hover:text-white">Register</a>
+      </div>
+    </div>
+  </nav>
+  
+
+    <div class="flex items-center justify-center min-h-screen bg-[url('/assets/image.png')] bg-cover bg-center ">
+        <main data-aos="fade-up" class="w-full max-w-sm p-6  bg-black/30 backdrop-blur-md shadow-lg rounded-2xl mx-auto -mt-10">
+  
+            <!-- Title -->
+            <h1 class="text-xl font-bold text-center text-white mb-6">Login as student</h1>
+            
+            <!-- Form -->
+            <form class="space-y-4">
+             
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <i class="fas fa-user text-blue-400"></i>
+                </div>
+                <input id="login-username" type="text"
+                  class="bg-white/10 border border-white/20 text-white rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-2 p-2.5 placeholder-white/60"
+                  placeholder="Masukkan username/email">
+              </div>
+            
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <i class="fas fa-lock text-blue-400"></i>
+                </div>
+                <input id="login-password" type="password"
+                  class="bg-white/10 border border-white/20 text-white rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-2 p-2.5 placeholder-white/60"
+                  placeholder="Masukkan password">
+              </div>
+            
+              <!-- Button -->
+              <button id="loginBtn" type="submit" disabled
+                class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center opacity-50 cursor-not-allowed transition-all duration-300">
+                Login
+              </button>
+            </form>
+            
+          
+            <!-- Footer -->
+             <div class="flex justify-center mt-6">
+                <a href="#" class="text-slate-300">Forget Password?</a>
+            </div>
+  
+              
+            <!-- <p class="text-center text-white/70 text-sm mt-6">
+              © 2025 SMP NEGERI 28 Jatinangor.
+            </p> -->
+          </main>
+    </div>
+    <script src="js/navLink.js"></script>
+    <script src="js/loginRechived.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800
+  });
+</script>
+  </body>
+  
+</html>

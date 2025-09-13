@@ -1,0 +1,14 @@
+{
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript",
+        "php": "html",
+        "vue": "html"
+    },
+    "css.validate": false,
+    "editor.suggest.showKeywords": true
+}
