@@ -558,12 +558,20 @@ video {
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .inset-y-0 {
@@ -604,6 +612,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -616,12 +628,20 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
 
 .h-12 {
   height: 3rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-8 {
@@ -706,16 +726,34 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
 .border-white\/20 {
   border-color: rgb(255 255 255 / 0.2);
 }
 
+.bg-\[\#907963\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 121 99 / var(--tw-bg-opacity, 1));
+}
+
 .bg-black\/30 {
   background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
 }
 
 .bg-blue-600 {
@@ -751,8 +789,12 @@ video {
   background-color: rgb(255 255 255 / 0.4);
 }
 
-.bg-\[url\(\'\/assets\/image\.png\'\)\] {
-  background-image: url('/assets/image.png');
+.bg-\[url\(\'\.\/assets\/image\.png\'\)\] {
+  background-image: url('./assets/image.png');
+}
+
+.bg-\[url\(\'\/absensi_jatinanggor\/assets\/image\.png\'\)\] {
+  background-image: url('/absensi_jatinanggor/assets/image.png');
 }
 
 .bg-gradient-to-r {
@@ -849,6 +891,11 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -883,6 +930,11 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-900 {
