@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
         // tambahin style aktif
         link.classList.add("font-normal", "text-white");
-        link.parentElement.classList.add("bg-slate-800"); // biar kotaknya juga beda
+        link.parentElement.classList.add("bg-slate-800"); 
       }
     });
   });

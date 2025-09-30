@@ -7,6 +7,8 @@
     <!-- gf -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Register</title>
 </head>
 <body class="min-h-screen w-full text-gray-900 font-sans antialiased">
@@ -20,7 +22,7 @@
     <!-- kanan -->
     <div class="flex items-center text-gray-700 gap-2">
         <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
-            <a href="dashboard.html" class=" hover:text-white">Dashboard</a>
+            <a href="home.html" class=" hover:text-white">Home</a>
         </div>
         <div class=" hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
             <a href="#" class=" hover:text-white">Contact</a>
@@ -35,9 +37,13 @@
   </nav>
   
 
-  <div class="flex items-center justify-center min-h-screen bg-[url('/absensi_jatinanggor/assets/image.png')] bg-cover bg-center">
+  <div class="relative w-full min-h-screen overflow-hidden">
     
-    <main data-aos="fade-up" class="w-full max-w-sm p-6  bg-black/30 backdrop-blur-md shadow-lg rounded-2xl mx-auto -mt-10">
+    <!-- Background image -->
+     <img src="assets/image.png" alt="bg" class="absolute inset-0 w-full h-full object-cover -z-10">  
+    
+
+    <main data-aos="fade-up" class="w-full max-w-sm p-6  bg-black/30 backdrop-blur-md shadow-lg rounded-2xl mx-auto mt-20">
   
             <!-- Title -->
             <h1 class="text-xl font-bold text-center text-white mb-2">Register</h1>
@@ -103,13 +109,24 @@
               </button>
             </form>
 
-             <!-- Popup -->
-             <div id="popup" class="hidden flex fixed inset-0 bg-black/50 items-center justify-center">
-              <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-                <h2 id="popupMessage" class="text-lg font-semibold text-gray-800 "></h2>
-                <button onclick="closePopup()" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">OK</button>
+            <!-- Popup -->
+            <div id="popup" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+              <div class="flex transform transition-all duration-300 scale-95 bg-[#907963] w-full mx-2 max-w-md p-4 rounded-lg shadow-lg text-center">
+                <img src="assets/warning.png" alt="warning" class="h-6 w-6">
+                <div id="popupBox" class="mx-auto">
+                     <div id="popupMessage" class="mb-5">
+                       <h2 class="text-lg font-lg mb-2"></h2>
+                       <p class="text-sm font-medium mb-2"></p>
+  
+                     </div>
+                  <button onclick="closePopup()" 
+                          class="mt-2 bg-[#D9D9D9] text-slate-700 px-4 py-2 rounded-lg hover:bg-slate-300 transition duration-300">
+                    OK
+                  </button>
+                </div>
               </div>
             </div>
+            
             
             <!-- Footer -->
             <div class="flex justify-center">

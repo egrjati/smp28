@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./dashboard.html",
-    "./login.html",
-    "./register.html",
-    "./login_teacher.html",
-    "./login_admin.html",
-    "./index.html",
+    "./*.html",
+    "./php/**/*.php",
     "./js/**/*.{js,ts}",
   ],
+  
   safelist: [
     "bg-[url('./assets/image.png')]",
     "hidden",

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <!-- gf -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Daftar Pengajuan Konseling</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body class="w-full text-gray-900 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="w-full h-12 bg-white shadow-md flex items-center justify-between px-4">
+        <div class="flex items-center ml-4 gap-3">
+            <img src="../assets/logo kiri.png" alt="logo kiri" class="h-10 w-24" />
+            <h2 class="text-md font-bold text-slate-900">SMP 28 JATINANGOR</h2>
+        </div>
+
+        <!-- kanan -->
+        <div class="flex items-center text-gray-700 gap-2">
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="home.html" class="hover:text-white">Home</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="#" class="hover:text-white">Contact</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="login.html" class="hover:text-white">Sign in</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="register.html" class="hover:text-white">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background section -->
+    <div class="relative w-full">
+  <!-- Gambar background -->
+  <img src="../assets/bg.png" alt="Background" class="w-full h-auto object-contain" />
+
+  <!-- Overlay konten di atas bg -->
+  <div class="absolute inset-0 flex flex-col items-center px-14 mt-28">
+    <!-- Box coklat -->
+    <div
+      class="w-full max-w-5xl bg-[#907963] h-[35rem] bg-opacity-80 rounded-sm flex flex-col items-center justify-start p-6">
+
+      <h1 class="text-black text-3xl font-extrabold tracking-wide text-center uppercase">
+        DAFTAR SISWA PENGAJUAN KONSELING
+      </h1>
+
+      <!-- Garis horizontal full-width -->
+      <div class="w-full border-t-2 border-gray-900 mt-4"></div>
+
+      <!-- Header -->
+      <div class="flex gap-10 text-slate-900 text-lg uppercase">
+        <p class="mr-14">NO. Siswa</p>
+        <p class="mr-14">Nama</p>
+        <p class="mr-14">Guru Pendamping</p>
+        <p class="ml-14 -translate-x-5">Tanggal</p>
+        <p class="ml-14">Action</p>
+      </div>
+
+      <div class="w-full border-t-2 border-gray-900 mt-4"></div>
+
+      <!-- Data siswa -->
+      <div class="flex gap-20 text-slate-900 text-lg mt-7 uppercase">
+        <p class="mr-14">xxxxx</p>
+        <p class="mr-14">xxxxx</p>
+        <p class="ml-14">xxxxx</p>
+        <p class="ml-14 translate-x-5">xx/xx/xxxx</p>
+
+        <div class="-translate-x-2 flex gap-3">
+          
+          <button
+            class="bg-[#73FFA6] translate-x-9 text-lg rounded-full font-semibold px-5 py-1">
+            ACC
+          </button>
+          <button
+            class="bg-[#FF7373] translate-x-9 text-lg rounded-full font-semibold px-5 py-1">
+            DEL
+          </button>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Tombol merah di luar box coklat -->
+    <div class="w-full max-w-5xl flex justify-end mt-4 gap-5">
+      <button
+        class="bg-[#FF9999] hover:bg-red-400 text-black font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300">
+        View History
+      </button>
+      <button
+        class="bg-[#FF9999] hover:bg-red-400 text-black font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300">
+        OK
+      </button>
+    </div>
+  </div>
+</div>
+
+   
+
+
+
+
+
+    <!-- Script -->
+    <script src="js/navLink.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800
+    });
+    </script>
+</body>
+
+</html>

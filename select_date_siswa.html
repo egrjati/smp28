@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- gf -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Login Student</title>
+  </head>
+  <body class="min-h-screen w-full text-gray-900 font-sans antialiased">
+    <!-- navbar -->
+    <nav
+      class="w-full h-12 bg-white shadow-md flex items-center justify-between px-4"
+    >
+      <div class="flex items-center ml-4 gap-3">
+        <img src="assets/logo kiri.png" alt="logo kiri" class="h-10 w-24" />
+        <h2 class="text-md font-bold text-slate-900">SMP 28 JATINANGOR</h2>
+      </div>
+
+      <!-- kanan -->
+      <div class="flex items-center text-gray-700 gap-2">
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="home.html" class="hover:text-white">Home</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="#" class="hover:text-white">Contact</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="login.html" class="hover:text-white">Sign in</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="register.html" class="hover:text-white">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="relative w-full min-h-screen overflow-hidden">
+      <!-- Background image -->
+      <img
+        src="assets/image.png"
+        alt="Background"
+        class="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+      <!-- Konten -->
+      <main
+        data-aos="fade-up"
+        class="w-full max-w-[40rem] p-10 bg-black/30 backdrop-blur-md shadow-lg rounded-2xl mx-auto mt-20"
+      >
+      <div class="bg-slate-200/80 w-full p-5 font-inter h-52 rounded-xl">
+        <h2 class="text-xl tracking-wide font-medium text-slate-900 uppercase"> Slect date</h2>
+       <form action="proses_tanggal.php" method="POST" class="space-y-4">
+  <label for="tanggal" class="block text-slate-800 font-medium mt-2">Enter Date</label>
+  <input 
+    type="date" 
+    id="tanggal" 
+    name="tanggal" 
+    class="border border-gray-400 rounded-lg px-3 py-2 w-96 focus:ring focus:ring-yellow-200"
+    required
+  >
+
+  <button 
+    type="submit" 
+    class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300">
+    Submit
+  </button>
+</form>
+
+<!-- next & cencel -->
+<div class="flex gap-6 justify-end items-end mt-5 -translate-x-7">
+    <div class="font-poppins text-xl text-blue-600">
+        <a href="">Cencel</a>
+    </div>
+    <div class="font-poppins text-xl text-blue-600">
+        <a href="">Next</a>
+    </div>
+</div>
+
+
+
+      </div>
+
+      </main>
+    </div>
+
+    <script src="js/navLink.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>

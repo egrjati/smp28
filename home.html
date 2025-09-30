@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- gf -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Home</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="w-full text-gray-900 font-sans antialiased">
+    <!-- Navbar -->
+    <nav
+      class="w-full h-12 bg-white shadow-md flex items-center justify-between px-4"
+    >
+      <!-- kiri -->
+      <img src="assets/logo kiri.png" alt="logo kiri" class="h-10 w-24" />
+
+      <!-- kanan -->
+      <div class="flex items-center text-gray-700 gap-2">
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="#" class="hover:text-white">Home</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="#" class="hover:text-white">Contact</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="login.html" class="hover:text-white">Sign in</a>
+        </div>
+        <div
+          class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300"
+        >
+          <a href="register.html" class="hover:text-white">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Background section -->
+    <div class="relative w-full">
+      <!-- Gambar background -->
+      <img
+        src="assets/bg.png"
+        alt="Background"
+        class="w-full h-auto object-contain"
+      />
+
+      <!-- Overlay konten di atas bg -->
+      <div class="absolute inset-0">
+        <!-- Judul -->
+        <div
+          class="flex flex-col items-center h-[44%] w-full bg-yellow-900 bg-opacity-40"
+        >
+          <h1 class="text-5xl mt-44 font-bold text-black text-center">
+            SMP 28 JATINANGOR
+          </h1>
+          <p
+            class="text-black text-2xl font-semibold text-center uppercase mt-5"
+          >
+            great academy, great students
+          </p>
+          <div class="flex justify-center mt-10 gap-4">
+            <a
+              href="dashboard.html"
+              class="bg-slate-300 text-slate-700 font-semibold px-4 py-2 rounded-xl hover:bg-slate-400 transition duration-200"
+            >
+              Dashboard
+            </a>
+          </div>
+        </div>
+
+        <!-- Kontainer bawah (rating + maps) -->
+        <div class="flex -mt-44">
+          <!-- Rating box -->
+          <div data-aos="fade-right"
+            class="bg-white bg-opacity-85 rounded-lg p-4 mt-72 ml-5 max-w-lg md:w-3/4 lg:w-1/2"
+          >
+            <div class="flex items-center">
+              <span class="text-yellow-500 text-lg mr-2">★★★★☆</span>
+              <span class="text-gray-600">(4.0)</span>
+            </div>
+            <h2 class="text-2xl font-bold">SMP Negeri 28 Jatinangor</h2>
+            <p class="text-gray-800 max-w-sm mt-1">
+              Jl. Pendidikan No.28, Desa Cikeruh, Kec. Jatinangor, Kabupaten
+              Sumedang, Jawa Barat 45363
+            </p>
+            <!-- Kontak -->
+            <div class="flex items-center mt-5 gap-2">
+              <img
+                src="assets/old-typical-phone.png"
+                alt="phone"
+                class="h-5 w-5"
+              />
+              <span class="text-gray-800">+62 812-3456-7890</span>
+            </div>
+            <div class="flex items-center mt-2 mb-5 gap-2">
+              <img src="assets/gmail.png" alt="email" class="h-5 w-5" />
+              <span class="text-gray-800">smpn28jatinangor@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Maps -->
+          <div 
+           class="ml-10">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.492761473593!2d107.79377587576401!3d-6.951052793049192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c4ee33fae665%3A0x59b153c844e95ea0!2sSMPN%202%20Jatinangor!5e0!3m2!1sid!2sid!4v1758349037171!5m2!1sid!2sid"
+              width="90%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              class="rounded-lg mt-72 mr-5"
+              data-aos="fade-left"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Statistik -->
+        <div
+          class="w-full h-[234px] bg-[#907963] bg-opacity-75 mt-28 flex items-center justify-center gap-10"
+        >
+          <div
+          data-aos="fade-up"
+            class="bg-white px-6 py-4 rounded-lg shadow text-black h-36 w-80"
+          >
+            <p class="text-lg font-semibold">“1500”</p>
+            <p class="tracking-wide text-slate-900">
+              Terdapat lebih dari <br />
+              1000 siswa
+            </p>
+          </div>
+
+          <div
+          data-aos="fade-up"
+            class="bg-white w-80 px-6 py-4 rounded-lg shadow h-36 text-black"
+          >
+            <p class="text-lg font-semibold">“1500”</p>
+            <p class="tracking-wide text-slate-900">
+              Terdapat 200 Medali <br />
+              yang sudah didapatkan
+            </p>
+          </div>
+
+          <div
+          data-aos="fade-up"
+            class="bg-white w-80 px-6 py-4 rounded-lg shadow h-36 text-black"
+          >
+            <p class="text-lg font-semibold">“100”</p>
+            <p class="tracking-wide text-slate-900">
+              Terdapat Fasilitas yang sudah <br />
+              mengikuti perkembangan <br />
+              Teknologi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" bg-white w-full border-t border-gray-200">
+      <div
+        class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <!-- Kolom 1: Logo + Sosmed -->
+        <div class="flex flex-col space-y-6">
+          <div class="flex gap-4">
+            <a href="#"
+              ><img
+                src="assets/twitter.png"
+                alt="Twitter"
+                class="h-6 w-6 hover:opacity-75"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/instagram.png"
+                alt="Instagram"
+                class="h-6 w-6 hover:opacity-75"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/youtube.png"
+                alt="YouTube"
+                class="h-6 w-6 hover:opacity-75"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/linkedin.png"
+                alt="LinkedIn"
+                class="h-6 w-6 hover:opacity-75"
+            /></a>
+          </div>
+          <img
+            src="assets/logo kiri.png"
+            alt="SMPN 28 Jatinangor"
+            class="h-16 w-36 translate-y-16"
+          />
+          <p class="text-sm text-gray-500 translate-y-14">© 2025 SMPN 28 Jatinangor</p>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Use cases</h3>
+          <ul class="space-y-1 text-gray-700">
+            <li>UI design</li>
+            <li>UX design</li>
+            <li>Wireframing</li>
+            <li>Diagramming</li>
+            <li>Brainstorming</li>
+            <li>Online whiteboard</li>
+            <li>Team collaboration</li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Explore</h3>
+          <ul class="space-y-1 text-gray-700">
+            <li>Design</li>
+            <li>Prototyping</li>
+            <li>Development features</li>
+            <li>Design system</li>
+            <li>Collaboration features</li>
+            <li>Design process</li>
+            <li>FigJam</li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4 -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Resources</h3>
+          <ul class="space-y-1 text-gray-700">
+            <li>Blog</li>
+            <li>Best practices</li>
+            <li>Colors</li>
+            <li>Color wheel</li>
+            <li>Support</li>
+            <li>Developers</li>
+            <li>Resource library</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/navLink.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800 });
+    </script>
+  </body>
+</html>

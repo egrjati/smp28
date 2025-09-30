@@ -7,14 +7,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $confirm  = mysqli_real_escape_string($conn, $_POST['confirm_password']);
 
-    // cek password & confirm
+    // cek pw
     if ($password !== $confirm) {
-        die("Password dan konfirmasi password tidak sama!");
+        echo json_encode(["status" => "error", "message" => "Password dan konfirmasi tidak sama!"]);
+        exit;
     }
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    // upload foto
+    // upfoto
     $foto   = $_FILES['foto']['name'];
     $tmp    = $_FILES['foto']['tmp_name'];
     $folder = "../uploads/";
@@ -31,11 +32,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES ('$username', '$email', '$hashedPassword', '$uniqueName')";
 
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Registrasi berhasil!'); window.location.href='../register.html';</script>";
+            echo json_encode([
+                "status" => "success",
+                "message" => "
+                    <h2 class='text-lg font-medium mb-2'>Your account has been registered...</h2>
+                    <p class='text-sm'>Thanks for regist your account....</p>
+                "
+            ]);
         } else {
-            echo "<script>alert('Registrasi gagal: " . mysqli_error($conn) . "'); window.location.href='../register.html';</script>";
+            echo json_encode([
+                "status" => "error",
+                "message" => "Registrasi gagal: " . mysqli_error($conn)
+            ]);
         }
     } else {
-        echo "Upload foto gagal!";
+        echo json_encode([
+            "status" => "error",
+            "message" => "Upload foto gagal!"
+        ]);
     }
 }

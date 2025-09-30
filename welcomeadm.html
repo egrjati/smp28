@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <!-- gf -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Home</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body class="w-full text-gray-900 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="w-full h-12 bg-white shadow-md flex items-center justify-between px-4">
+        <div class="flex items-center ml-4 gap-3">
+            <img src="../assets/logo kiri.png" alt="logo kiri" class="h-10 w-24" />
+            <h2 class="text-md font-bold text-slate-900">SMP 28 JATINANGOR</h2>
+        </div>
+
+        <!-- kanan -->
+        <div class="flex items-center text-gray-700 gap-2">
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="home.html" class="hover:text-white">Home</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="#" class="hover:text-white">Contact</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="login.html" class="hover:text-white">Sign in</a>
+            </div>
+            <div class="hover:bg-slate-800 rounded-lg px-2 py-1 transition duration-300">
+                <a href="register.html" class="hover:text-white">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background section -->
+    <div class="relative w-full">
+        <!-- Gambar background -->
+        <img src="../assets/bg.png" alt="Background" class="w-full h-auto object-contain" />
+
+        <!-- Overlay konten di atas bg -->
+        <div class="absolute inset-0 flex justify-center px-14 mt-10">
+            <!-- Box coklat -->
+            <div
+                class="w-full max-w-5xl h-[44%] bg-[#907963] bg-opacity-80 rounded-sm flex flex-col items-center justify-start p-6">
+                <h1 class="text-black mt-5 text-4xl font-medium text-center uppercase tracking-wider">
+                    Selamat Datang Admin SMP 28 Jatinangor
+                </h1>
+
+                <div class="flex text-3xl font-semibold uppercase gap-40 mt-32">
+                    <!-- Data Siswa -->
+                     <div class="bg-[#FEFFC1] rounded-full text-center w-72 h-16 py-3 px-3 tracking-wide ">
+                        Data siswa
+                     </div>
+                    <!-- Data Guru -->
+                     <div class="bg-[#FEFFC1] rounded-full text-center w-72 h-16 py-3 px-3 tracking-wide">
+                        Data Guru
+                     </div>
+                </div>
+ <div class="bg-[#FEFFC1] mt-10 rounded-full text-center w-72 h-16 py-3 px-3 tracking-wide text-3xl font-semibold  uppercase ">
+                        Konseling
+                     </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Script -->
+    <script src="js/navLink.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800
+    });
+    </script>
+</body>
+
+</html>
